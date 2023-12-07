@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-harpa-main {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 38 41 / var(--tw-bg-opacity));
+  }
+}
