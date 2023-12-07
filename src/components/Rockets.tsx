@@ -36,7 +36,7 @@ export default function Rockets() {
           {images.map((img) => (
             <li
               key={img.id}
-              className=" flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-harpa-main py-6 px-2 rounded-3xl shadow-xl"
+              className=" hover:-translate-y-2 transition cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-harpa-main py-6 px-2 rounded-3xl shadow-xl"
             >
               <img src={img.path} alt="Explorer" className=" w-1/2 mb-6" />
               <h3 className="text-3xl mt-2 text-center text-slate-500 dark:text-slate-500 ">
