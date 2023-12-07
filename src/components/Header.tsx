@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="bg-blue-500  text-white sticky top-0 z-10 mb-5">
+    <header className=" bg-indigo-700 shadow-xl text-white sticky top-0 z-10 mb-5">
       <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
         <h1 className=" text-3xl font-medium">
           <a href="#hero">🚀 Acme Rockets</a>
