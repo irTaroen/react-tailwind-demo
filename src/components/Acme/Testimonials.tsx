@@ -19,12 +19,12 @@ export default function Testimonials() {
         }
     ]
     return (
-        <section id="testimonials" className=" p-6 my-12">
+        <section id="testimonials" className=" max-w-4xl mx-auto p-6 my-12">
             <h2 className=" text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Testimonials
             </h2>
             {testimonials.map((data) => (<figure className=" my-12">
-                <blockquote className=" bg-teal-600 dark:bg-harpa-seondary pl-14 pr-8 py-12 rounded-3xl relative shadow-xl"><p className=" text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-1 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-0 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom--20 after:right-1 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-0 after:translate-y-2">{data.text}</p>
+                <blockquote className=" bg-indigo-600 dark:bg-harpa-seondary pl-14 pr-8 py-12 rounded-2xl relative shadow-xl"><p className=" text-2xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-1 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-0 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom--20 after:right-1 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-0 after:translate-y-2">{data.text}</p>
                 </blockquote>
                 <figcaption className=" italic text-xl py-4 sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
                     &#8212; {data.customer}

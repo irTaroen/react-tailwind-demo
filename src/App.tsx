@@ -1,10 +1,8 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+import MainAcme from "./components/Acme/MainAcme";
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <MainAcme />
     </>
   );
 }
