@@ -8,3 +8,10 @@
     background-color: rgb(34 38 41 / var(--tw-bg-opacity));
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-harpa-seondary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(38 47 53 / var(--tw-bg-opacity));
+  }
+}
