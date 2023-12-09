@@ -1,7 +1,7 @@
 export default function Rockets() {
   const images = [
     {
-      path: "img/rocketman.png",
+      path: "public/img/Acme/rocketman.png",
       title: "Explorer",
       subtext: "Affordable Exploration",
       price: "$",
@@ -9,7 +9,7 @@ export default function Rockets() {
       id: 1,
     },
     {
-      path: "img/rocketride.png",
+      path: "public/img/Acme/rocketride.png",
       title: "Adventurer",
       subtext: "Best Selling Rocket",
       price: "$$",
@@ -17,7 +17,7 @@ export default function Rockets() {
       id: 2,
     },
     {
-      path: "img/rocketlaunch.png",
+      path: "public/img/Acme/rocketlaunch.png",
       title: "Infity",
       subtext: "Luxury Starship",
       price: "$$$",

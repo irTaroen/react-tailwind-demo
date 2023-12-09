@@ -19,7 +19,7 @@ export default function Hero() {
             Think Acme Rockets.
           </p>
         </article>
-        <img src="img/rocketdab.png" alt="Rocket Dab" className=" w-1/2" />
+        <img src="public/img/Acme/rocketdab.png" alt="Rocket Dab" className=" w-1/2" />
       </section>
       <hr className=" mx-auto bg-white dark:bg-harpa-main w-1/2" />
     </>
