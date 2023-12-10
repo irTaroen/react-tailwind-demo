@@ -39,6 +39,7 @@ export default function Card_First() {
     id: 3
   }]
   return (
+
     <div className="flex my-2 max-w-3xl mx-auto rounded-md border border-solid border-white">
       <div className=" w-80 bg-white">
         <img src="public/img/Cards/CardFirst.png" alt="" className=" object-cover rounded-md" />
@@ -50,11 +51,11 @@ export default function Card_First() {
             {buttons.map((data) => (<button className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-blue-500 shadow-md hover:scale-110" onClick={fetchData}>{data.name}</button>))}
           </div>
           <div className=' mt-6 flex items-center'>
-            <button onClick={()=>setText("Data Cleared")} className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-blue-500 shadow-md hover:scale-110" >Clear Data</button>
+            <button onClick={()=>setText("")} className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-red-500 shadow-md hover:scale-110 mx-6" >Clear Data</button>
           </div>
         </div>
       </div>
-    </div>
+      </div>
 
   )
 }   

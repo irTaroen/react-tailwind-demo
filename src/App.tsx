@@ -2,11 +2,8 @@
 import Card_First from "./components/Cards/Card_First";
 
 function App() {
-  return (
-    <>
-      {/* <MainAcme /> */}
+  return (    
       <Card_First />
-    </>
   );
 }
 
