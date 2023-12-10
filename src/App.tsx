@@ -3,7 +3,11 @@ import Card_First from "./components/Cards/Card_First";
 
 function App() {
   return (    
-      <Card_First />
+    <>      
+    <Card_First path="public/img/Cards/requests.png" />
+    </>
+
+      
   );
 }
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Card_First() {
+export default function Card_First(props:any) {
   const [text, setText] = useState("Initial String");
 
   interface YourData {
@@ -42,11 +42,11 @@ export default function Card_First() {
   }]
   return (
 
-    <div className="flex my-2 max-w-3xl mx-auto rounded-md border border-solid border-white">
-      <div className=" w-80 bg-white">
-        <img src="public/img/Cards/Card_First.png" alt="" className=" object-cover rounded-md" />
+    <div className="flex my-2 max-w-3xl mx-auto rounded-md  bg-[#001118]">
+      <div className=" w-80">
+        <img src={props.path} alt="" className=" object-cover rounded-md" />
       </div>
-      <div className=" w-full mx-2">
+      <div className=" w-full mx-2 ">
         <div className=" border-b-2 h-52 flex justify-center items-center"> {text}</div>
         <div className='flex'>
           <div className=" flex justify-around mt-6 w-96">
