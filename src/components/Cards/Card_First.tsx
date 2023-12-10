@@ -27,27 +27,27 @@ export default function Card_First() {
   };
 
   const buttons = [{
-    name: "get 1",
-    endpoint: "",
+    name: "Home",
+    endpoint: "home",
     id: 1
   }, 
   {
-    name: "get 2",
+    name: "Items",
     endpoint: "items",
     id: 2
   }, {
-    name: "post 1",
-    endpoint: "",
+    name: "Hello",
+    endpoint: "hello",
     id: 3
   }]
   return (
 
     <div className="flex my-2 max-w-3xl mx-auto rounded-md border border-solid border-white">
       <div className=" w-80 bg-white">
-        <img src="public/img/Cards/CardFirst.png" alt="" className=" object-cover rounded-md" />
+        <img src="public/img/Cards/Card_First.png" alt="" className=" object-cover rounded-md" />
       </div>
       <div className=" w-full mx-2">
-        <div className=" border-b-2 h-52"> {text}</div>
+        <div className=" border-b-2 h-52 flex justify-center items-center"> {text}</div>
         <div className='flex'>
           <div className=" flex justify-around mt-6 w-96">
             {buttons.map((entry) => (<button className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-blue-500 shadow-md hover:scale-110" onClick={()=>fetchData(entry.endpoint)}>{entry.name}</button>))}
