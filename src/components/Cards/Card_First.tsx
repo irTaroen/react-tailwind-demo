@@ -7,9 +7,10 @@ export default function Card_First() {
     message: string;
   }
 
-  const fetchData = async (): Promise<void> => {
+  const fetchData = async (endpoint: string): Promise<void> => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/");
+      const urlfull = "http://127.0.0.1:8000/" + endpoint
+      const response = await fetch(urlfull);
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -27,15 +28,16 @@ export default function Card_First() {
 
   const buttons = [{
     name: "get 1",
-    url: "",
+    endpoint: "",
     id: 1
-  }, {
+  }, 
+  {
     name: "get 2",
-    url: "",
+    endpoint: "items",
     id: 2
   }, {
     name: "post 1",
-    url: "",
+    endpoint: "",
     id: 3
   }]
   return (
@@ -48,7 +50,7 @@ export default function Card_First() {
         <div className=" border-b-2 h-52"> {text}</div>
         <div className='flex'>
           <div className=" flex justify-around mt-6 w-96">
-            {buttons.map((data) => (<button className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-blue-500 shadow-md hover:scale-110" onClick={fetchData}>{data.name}</button>))}
+            {buttons.map((entry) => (<button className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-blue-500 shadow-md hover:scale-110" onClick={()=>fetchData(entry.endpoint)}>{entry.name}</button>))}
           </div>
           <div className=' mt-6 flex items-center'>
             <button onClick={()=>setText("")} className=" text-xs w-24 font-bold text-center p-2 rounded-md uppercase text-white cursor-pointer bg-red-500 shadow-md hover:scale-110 mx-6" >Clear Data</button>
