@@ -1,13 +1,10 @@
-// import MainAcme from "./components/Acme/MainAcme";
-import Card_First from "./components/Cards/Card_First";
+import MainVSync from "./components/VSync/MainVSync";
 
 function App() {
-  return (    
-    <>      
-    <Card_First path="public/img/Cards/requests.png" />
+  return (
+    <>
+      <MainVSync />
     </>
-
-      
   );
 }
 
