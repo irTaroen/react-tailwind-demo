@@ -28,7 +28,7 @@ export default function Card_First(props:any) {
 
   const buttons = [{
     name: "Home",
-    endpoint: "home",
+    endpoint: "",
     id: 1
   }, 
   {
