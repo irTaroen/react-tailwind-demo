@@ -3,10 +3,10 @@ export default function DataNode(props) {
   return (
     <div
       id={index}
-      className=" border border-solid border-white w-24 h-24 text-center justify-center items-center flex cursor-pointer mx-2"
+      className=" border border-white w-28 h-24 text-center justify-center items-center flex cursor-pointer"
       onClick={() => alert("select data")}
     >
-      DataNode #{index}
+      Data
     </div>
   );
 }

@@ -1,9 +1,9 @@
-import CardWebshopOne from "./components/Cards/Card_Webshop_1";
+import MainVSync from "./components/VSync/MainVSync";
 
 function App() {
   return (
     <>
-      <CardWebshopOne />
+      <MainVSync />
     </>
   );
 }
