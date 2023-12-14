@@ -1,5 +1,6 @@
-export default function ConditionNode(props) {
+export default function ConditionNode(props:any) {
   const index = props.index;
+
   return (
     <div
       id={index}

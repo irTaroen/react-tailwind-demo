@@ -1,6 +1,9 @@
-import DataNode from "./DataNode";
-
 export default function OptionsNode(props:any) {
+
+  // const parent_id = props.parent_id
+  // const new_sequence = props.sequence + parent_id
+  // const new_sequence = "This is the new sequence"
+
   return (
     <div className="border border-solid border-white w-24 h-24 flex-col items-center justify-between opacity-90">
       <button

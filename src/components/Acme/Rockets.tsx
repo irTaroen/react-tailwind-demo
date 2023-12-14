@@ -24,6 +24,7 @@ export default function Rockets() {
       alt: "Infity",
       id: 3,
     },
+    
   ];
 
   return (

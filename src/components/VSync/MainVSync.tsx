@@ -10,30 +10,9 @@ export default function MainVSync() {
   const [nodeIndex, setNodeIndex] = useState(0);
   const [dataNodes, setDataNodes] = useState([]);
 
-  function createNode(props) {
-    if (props.nodetype === "Add") {
-      console.log("Add");
-      return (
-        <>
-          <DataNode index={props.nodeIndex} />
-        </>
-      );
-    } else if (props.nodetype === "Condition") {
-      return (
-        <>
-          <ConditionNode index={props.nodeIndex} />
-        </>
-      );
-      console.log("Condition");
-    } else {
-      // Handle other cases or return a default value
-      console.log("End selected");
-    }
-  }
-
-  const handleButtonClick_Add = () => {
+  const handleButtonClick_Add = (new_sequence) => {
     // Create a new array with the existing nodes and add a new DataNode
-    setDataNodes([...dataNodes, { type: "Add", key: nodeIndex }]);
+    setDataNodes([...dataNodes, { type: "Add", key: nodeIndex, sequnce:new_sequence}]);
     setNodeIndex(nodeIndex + 1);
     // console.log(nodeIndex);
     // console.log(dataNodes);

@@ -1,4 +1,4 @@
-export default function DataNode(props) {
+export default function DataNode(props:any) {
   const index = props.index;
   return (
     <div

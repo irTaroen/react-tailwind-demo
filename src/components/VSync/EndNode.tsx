@@ -1,4 +1,4 @@
-export default function EndNode(props) {
+export default function EndNode(props:any) {
     const index = props.index;
     return (
       <div
